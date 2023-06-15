@@ -5,30 +5,49 @@
 <html lang="en">
 
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'main.css' %}">
-</head>
-<style>
+    <title>Skin Cancer</title>
+     <!-- <link rel="stylesheet" href="{% static 'main.css' %}"> --> 
+     <style>
+        /*
+    .App-header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    }
     .button {
-      border: none;
-      color: rgb(34, 168, 1);
-      padding: 16px 32px;
-      text-align: center;
-      font-size: 16px;
-      margin: 4px 2px;
-}
-.button-container {
-  display: flex;
-}
+        border: none;
+        color: rgb(34, 168, 1);
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+    .button-container {
+    display: flex;
+    }
+    body {
+    text-align: left;
+    }
+    */
+    </style>
 
-</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head> 
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="https://healthywithpardee.com/wp-content/uploads/elementor/thumbs/Blog-Hero-Skin-Cancer-pmxhiqdb3e8ilqn1nrpjm8lopyep7z3vunx64vhaa4.jpg" width="900"/>
-            <p>
-                <h1 style="font-size: 5vw">Skin cancer</h1> 
-            </p>
+    <main>
+    <div class="container py-4">
+    <header>
+    
+    </header> 
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">  
+          <h1 class="display-5 fw-bold">Skin cancer</h1>
+          <img style="height: 200px;" src="https://healthywithpardee.com/wp-content/uploads/elementor/thumbs/Blog-Hero-Skin-Cancer-pmxhiqdb3e8ilqn1nrpjm8lopyep7z3vunx64vhaa4.jpg" />
+          <a class="btn btn-primary btn-lg"  href="url">Risk factor test</a>
+          <a class="btn btn-secondary btn-lg" href="url">Interactive map</a>
+        </div>
+      </div>
                 Find out and take a test about skin cancer, the most common cancer in the United States.
             <ul>
                 <li>1 in 5 Americans will develop skin cancer by the age of 70.</li>
@@ -36,7 +55,7 @@
                 <li>Having 5 or more sunburns doubles your risk for melanoma.</li>
                 <li>When detected early, the 5-year survival rate for melanoma is 99 percent.</li>
             </ul>    
-            TYPES OF SKIN CANCER
+               TYPES OF SKIN CANCER
             <ol>
                 <li>Basal cell carcinoma (BCC)</li>
              Often look like a flesh-colored round growth, pearl-like bump, or a pinkish patch of skin. This type of cancer usually develop after years of frequent sun exposure or indoor tanning. BCCs are common on the head, neck, and arms; however, they can form anywhere on the body, including the chest, abdomen, and legs. <img src= "https://images.ctfassets.net/1ny4yoiyrqia/5qtWWjAMy8k5a2sckZwC1b/397ac01c7512d8efd71635401b3d0a80/types-of-skin-cancer-basal-cell-carcinoma.jpg" width="100"/>
@@ -46,14 +65,9 @@
             Often called "the most serious skin cancer" because it has a tendency to spread. Melanoma can develop within a mole that you already have on your skin or appear suddenly as a dark spot on the skin that looks different from the rest. Early diagnosis and treatment are crucial. <img src="https://images.ctfassets.net/1ny4yoiyrqia/3aZvjuwQX61zJVLpnmClQR/2cece67a45770a5c3795b195106bfefb/types-of-skin-cancer-melanoma.jpg" width="100"/>
             </ol>
             </p>
-            <button name="redirect" class="button" onClick="redirect()">
-                Risk factor test
-                </button>
-            <button name="redirect" class="button" onClick="redirect()">
-                Interactive map
-                </button>
-        </header>
-    </div>
+            
+</div>
+</main>
 </body>
 
 </html>

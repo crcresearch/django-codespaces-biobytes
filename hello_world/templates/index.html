@@ -8,17 +8,50 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
+<style>
+    .button {
+      border: none;
+      color: rgb(34, 168, 1);
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+}
+.button-container {
+  display: flex;
+}
 
+</style>
 <body>
     <div class="App">
         <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
+            <img src="https://healthywithpardee.com/wp-content/uploads/elementor/thumbs/Blog-Hero-Skin-Cancer-pmxhiqdb3e8ilqn1nrpjm8lopyep7z3vunx64vhaa4.jpg" width="900"/>
             <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
+                <h1 style="font-size: 5vw">Skin cancer</h1> 
             </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
+                Find out and take a test about skin cancer, the most common cancer in the United States.
+            <ul>
+                <li>1 in 5 Americans will develop skin cancer by the age of 70.</li>
+                <li>More than 2 people die of skin cancer in the U.S. every hour.</li>
+                <li>Having 5 or more sunburns doubles your risk for melanoma.</li>
+                <li>When detected early, the 5-year survival rate for melanoma is 99 percent.</li>
+            </ul>    
+            TYPES OF SKIN CANCER
+            <ol>
+                <li>Basal cell carcinoma (BCC)</li>
+             Often look like a flesh-colored round growth, pearl-like bump, or a pinkish patch of skin. This type of cancer usually develop after years of frequent sun exposure or indoor tanning. BCCs are common on the head, neck, and arms; however, they can form anywhere on the body, including the chest, abdomen, and legs. <img src= "https://images.ctfassets.net/1ny4yoiyrqia/5qtWWjAMy8k5a2sckZwC1b/397ac01c7512d8efd71635401b3d0a80/types-of-skin-cancer-basal-cell-carcinoma.jpg" width="100"/>
+                <li>Squamous cell carcinoma (SCC) of the skin</li>
+            Often looks like a red firm bump, scaly patch, or a sore that heals and then re-opens. It tends to form on skin that gets frequent sun exposure, such as the rim of the ear, face, neck, arms, chest, and back. SCC can grow deep into the skin, causing damage and disfigurement.<img src="https://images.ctfassets.net/1ny4yoiyrqia/69i6dE850T0eurLwAvn67J/943dbdb6de3de9961bd9579f25ef0c8c/types-of-skin-cancer-squamous-cell-carcinoma.jpg" width="100"/>
+                <li>Melanoma</li>
+            Often called "the most serious skin cancer" because it has a tendency to spread. Melanoma can develop within a mole that you already have on your skin or appear suddenly as a dark spot on the skin that looks different from the rest. Early diagnosis and treatment are crucial. <img src="https://images.ctfassets.net/1ny4yoiyrqia/3aZvjuwQX61zJVLpnmClQR/2cece67a45770a5c3795b195106bfefb/types-of-skin-cancer-melanoma.jpg" width="100"/>
+            </ol>
             </p>
+            <button name="redirect" class="button" onClick="redirect()">
+                Risk factor test
+                </button>
+            <button name="redirect" class="button" onClick="redirect()">
+                Interactive map
+                </button>
         </header>
     </div>
 </body>

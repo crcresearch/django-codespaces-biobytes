@@ -43,3 +43,8 @@ body {
   .small {
     font-size: 0.75rem;
   }
+
+  .form-range
+  {
+    width: 1000 px;
+  }

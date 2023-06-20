@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 from hello_world.core import views as core_views
-from .views import test_view 
+from .views import test_view, map_view
 urlpatterns = [
     path("", core_views.index),
     path("admin/", admin.site.urls),

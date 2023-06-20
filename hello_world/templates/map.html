@@ -32,9 +32,11 @@
     Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function (data) {
 
         // Prevent logarithmic errors in color calulcation
-        data.forEach(function (p) {
-            p.value = (p.value < 1 ? 1 : p.value);
-        });
+        //data.forEach(function (p) {
+        //    p.value = (p.value < 1 ? 1 : p.value);
+        //});
+
+        const myData = {{ data|safe }};
 
         // Initialize the chart
         Highcharts.mapChart('container', {
@@ -77,8 +79,8 @@
             },
 
             series: [{
-                data: data,
-                joinBy: ['iso-a3', 'code3'],
+                data: myData,
+                joinBy: ['name', 'name'],
                 name: 'Skin Cancer Incidence',
                 tooltip: {
                     valueSuffix: '/100 000'

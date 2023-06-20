@@ -44,7 +44,10 @@ body {
     font-size: 0.75rem;
   }
 
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
   .form-range
   {
-    width: 1000 px;
+    width: 40%;
   }

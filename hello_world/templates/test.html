@@ -3,28 +3,39 @@
 
 <!doctype html>
 <html lang="en">
+<head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<div class="wholepage">
   <div class="p-5 mb-4 bg-body-tertiary rounded-3">
   <div class="container-fluid py-5">  
-    <h1 class="display-5 fw-bold">Skin cancer Test</h1>
-    <img style="height: 200px;" src="https://www.health.com/thmb/H-U2vstjMiCjrfW0QSpjg7ErUs0=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-skin-cancer-overview-Dennis-Madamba-Final-74fa4a8456cd42d4b68eafcf55186d81.jpg" />
-    <a class="btn btn-success btn-lg"  href="/">Home Page</a>
-    <a class="btn btn-secondary btn-lg" href="map">Interactive map</a>
-  </div>
+    <h1 class="display-5_fw-bold">Skin Cancer Test</h1>
+    <img style="height: 200px;" src="https://www.health.com/thmb/H-U2vstjMiCjrfW0QSpjg7ErUs0=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-skin-cancer-overview-Dennis-Madamba-Final-74fa4a8456cd42d4b68eafcf55186d81.jpg" class = "firstimage"/>
+    <br><br/>
+    <div class="wrapper">
+      <a class="btn btn-success btn-lg"  href="/">Home Page</a>  
+      <a class="btn btn-secondary btn-lg" href="map">Interactive map</a>
+    </div>
+    </div>
 </div>
+<legend class="PatientInfo">Patient Information</legend>
 <div class="row">
   <div class="col">
+    <label for="FirstNameLabel">First name(s)</label>
     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
   </div>
   <div class="col">
+    <label for="LastNameLabel">Last name(s)</label>
     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
   </div>
 </div>
 </head>
 <fieldset>
-    <legend>How old are you?</legend>
+    <legend>Age</legend>
+    <label  class="AgeInstructions" for="AgeInstructions">Select the correct age range:"</label>
 
     <div>
       <input type="radio" id="Under 20" name="drone" value="Under 20"
@@ -63,7 +74,7 @@
     </div>
 
     <div>
-        <input type="radio" id="More than 84" name="drone" value="More than 84">
+        <input type="radio" id="More than 84" name="drone" value="1">
         <label for="More than 84">More than 84</label>
     </div>
 
@@ -86,21 +97,28 @@
 </fieldset>
 <fieldset>
 
-    <legend>Select the eyer color which best fits you</legend>
+    <legend>Select the eye color which best fits you</legend>
     <img src="/static/EyeChart.jpg" width = 400px>
     <div>
-      <input type="radio" id="Under 20" name="drone" value="Under 20"
-             checked>
-      <label for="Under 20">Under 20</label>
+      <label for="Eye-Color">Select one:</label>
+      <select name="eye-color" id="desplegable">
+      <option value="Emerald Green">Emerald Green</option>
+      <option value="Baby Blue">Baby Blue</option>
+      <option value="Hazel">Hazel</option>
+      <option value="Chestnut Brown">Chestnut Brown</option>
+      <option value="Violet">Violet</option>
+      <option value="Sapphire Blue">Sapphire Blue</option>
+      <option value="Aqua">Aqua</option>
+      </select>
     </div>
 </fieldset>
 <fieldset>
-    <legend>Where do you from?</legend>
+    <legend>Where do you come from?</legend>
 
     <div>
       <input type="radio" id="Northern America" name="drone" value="Northern America"
              checked>
-      <label for="Northern America">Northen America</label>
+      <label for="Northern America">Northern America</label>
     </div>
     <div>
         <input type="radio" id="South America" name="drone" value="South America"
@@ -112,7 +130,6 @@
                checked>
         <label for="Western Europe">Western Europe</label>
     </div>
-        </div>
       <div>
         <input type="radio" id="Central & Eastern Europe" name="drone" value="Central & Eastern Europe"
                checked>
@@ -153,7 +170,6 @@
                checked>
         <label for="Several times a week">Several times a week</label>
     </div>
-        </div>
       <div>
         <input type="radio" id="Once a week" name="drone" value="Once a week"
                checked>
@@ -215,19 +231,19 @@
     <input type="radio" id="Yes, moderate number of freackles" name="drone" value="Yes, moderate number of freackles"
     checked>
 <label for="Yes, moderate number of freackles">Yes, moderate number of freackles</label>
-    </div>
-        </div>
+    <div>
         <input type="radio" id="Yes, many freckles" name="drone" value="Yes, many freckles"
         checked>
     <label for="Yes, many freckles">Yes, many freckles</label>
     </div>
-        </div>
-        </div>
+    <div>
         <input type="radio" id="No, I do not have any freckles" name="drone" value="No, I do not have any freckles"
         checked>
     <label for="No, I do not have any freckles">No, I do not have any freckles</label>
     </div>
 </fieldset>
+</div>
+</body>
 
 
 <script>

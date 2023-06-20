@@ -56,10 +56,16 @@
 <fieldset>
     <legend>What is your skin color</legend>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Felix_von_Luschan_Skin_Color_chart.svg/1280px-Felix_von_Luschan_Skin_Color_chart.svg.png" width="450 px">
-    <div>
+   <!-- <div>
         <br><br/>
         <label for="customRange2" class="form-label">Select a number</label>
         <input type="range" class="form-range" min="0" max="5" id="customRange2">
+    </div> -->
+    <div  class="slidecontainer">
+      <br><br/>
+      <label for="customRange" class="form-label">Select a number</label>
+      <input type="range"  min="1" max="36" value="20" class="form-range" id="myRange">
+      <p>Value: <output id="value"></output></p>
     </div>
 </fieldset>
 <fieldset>
@@ -207,4 +213,14 @@
     </div>
 </fieldset>
 
+
+<script>
+  alert("hola");
+  const value = document.querySelector("#value");
+  const input = document.querySelector("#myRange");
+  value.textContent = input.value;
+  input.addEventListener("input", (event) => {
+  value.textContent = event.target.value;
+});
+</script>
 </html> 

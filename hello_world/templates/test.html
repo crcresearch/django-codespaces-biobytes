@@ -101,14 +101,14 @@
     <img src="/static/EyeChart.jpg" width = 400px>
     <div>
       <label for="Eye-Color">Select one:</label>
-      <select name="eye-color" id="desplegable">
-      <option value= 6 >Emerald Green</option>
-      <option value= 9 >Baby Blue</option>
-      <option value= 5 >Hazel</option>
-      <option value= 3 >Chestnut Brown</option>
-      <option value= 10 >Violet</option>
-      <option value= 8 >Sapphire Blue</option>
-      <option value= 7 >Aqua</option>
+      <select id="desplegable">
+      <option value= "6" >Emerald Green</option>
+      <option value= "9" >Baby Blue</option>
+      <option value= "5" >Hazel</option>
+      <option value= "3" >Chestnut Brown</option>
+      <option value= "10" >Violet</option>
+      <option value= "8" >Sapphire Blue</option>
+      <option value= "7" >Aqua</option>
       </select>
     </div>
 </fieldset>
@@ -252,17 +252,65 @@
 
 <script>
   const value = document.querySelector("#value");
-  value2 = value/3.6;
+;
   const input = document.querySelector("#myRange");
   value.textContent = input.value;
+ 
   input.addEventListener("input", (event) => {
   value.textContent = event.target.value;
+  valor2 = -1*Number(event.target.value)/3.6+10
 });
+function submit() { 
+    var valor1 = document.getElementsByName('Q1');
+    for (var radio of valor1)
+    {
+        if (radio.checked) {
+           valor1= Number(radio.value);
+        }
+    }
+    var valor4 = document.getElementsByName('Q4');
+    for (var radio of valor4)
+    {
+        if (radio.checked) {
+           valor4 = Number(radio.value);
+        }
+    }
+    var valor5 = document.getElementsByName('Q5');
+    for (var radio of valor5)
+    {
+        if (radio.checked) {
+           valor5 = Number(radio.value);
+        }
+    }
+    
+    var valor6 = document.getElementsByName('Q6');
+    for (var radio of valor6)
+    {
+        if (radio.checked) {
+           valor6 = Number(radio.value);
+        }
+    }
+    var valor7 = document.getElementsByName('Q7');
+    for (var radio of valor7)
+    {
+        if (radio.checked) {
+           valor7 = Number(radio.value);
+        }
+    }
+
+
+    selectElement = document.getElementById("desplegable");
+    valor3 = Number(selectElement.value);
+
+
+    total = String(valor1+valor2+valor3+valor4+valor5+valor6+valor7);
+
+    
+    alert(output)
+} 
 </script>
 
 <script>
-function submit() { 
-         alert("Presionaste el boton") 
-      } 
+
 </script>
 </html> 

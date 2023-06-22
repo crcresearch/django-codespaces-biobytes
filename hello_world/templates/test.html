@@ -26,11 +26,11 @@
 <div class="row">
   <div class="col">
     <label for="FirstNameLabel">First name(s)</label>
-    <input type="text" class="form-control" placeholder="John" aria-label="First name">
+    <input type="text" class="FirstName" placeholder="John" aria-label="First name" value="John" id ="FirstName">
   </div>
   <div class="col">
     <label for="LastNameLabel">Last name(s)</label>
-    <input type="text" class="form-control" placeholder="Cena" aria-label="Last name">
+    <input type="text" class="LastName" placeholder="Cena" aria-label="Last name" value="Cena" id = "LastName">
   </div>
 </div>
 </head>
@@ -305,8 +305,23 @@ function submit() {
 
     total = String(valor1+valor2+valor3+valor4+valor5+valor6+valor7);
 
-    
-    alert(output)
+    Name = document.getElementById("FirstName").value;
+    LastName = document.getElementById("LastName").value;
+    if (total<20)
+    {
+      message = ", you are at low skin cancer risk. Keep all the preventive measures.";
+    }
+    else if (total<40)
+    {
+      message = ", you are at medium skin cancer risk. Use sunscreen when outside.";
+    }
+    else
+    {
+      message = ", you are at HIGH skin cancer risk. Seek medical attention inmediately."
+    }
+
+    info = Name + message
+    alert(info)
 } 
 </script>
 

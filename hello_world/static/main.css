@@ -84,6 +84,10 @@ body {
   .BotonSubmit
   {
     text-align: center;
+    width: 40%;
+    margin-left: 400px;
+    margin-right: 400px;
+    ;
   }
 
   .btn-container {
